@@ -1,0 +1,65 @@
+/*
+Project Prism Color Palette
+
+Primary Purple: #6930C3
+Primary Blue:   #5465FF
+Secondary Blue: #5390D9
+Accent Cyan:    #48BFE3
+Highlight Mint: #72EFDD
+
+Light Background:       #EDF2FB
+Secondary Background:   #D7E3FC
+
+Dark Text:  #18202A
+White:      #FFFFFF
+*/
+
+/* Styles entire webpage */
+body{
+    background-color: #EDF2FB;
+    color: #18202A;
+    font-family: Arial, sans-serif;
+}
+
+/* Main title */
+h1{
+    color: #6930C3;
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    margin: 20px;
+}
+
+/* Section heading */
+h2{
+    color: #5465FF;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Social Media heading */
+h3 {
+    color: #5390D9;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Paragraph Styling */
+p{
+    color: #18202A;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    margin: 20px;
+}
+
+/* Image Styling */
+img{
+    margin: 20px;
+    border: 5px solid #D7E3FC;
+    border-radius: 5px;
+}
+
+/* Link Styling */
+a:link {color:#5465FF}
+a:visited {color:#6930C3}
+a:hover {color: #48BFE3}
+a:active {color:#72EFDD}
