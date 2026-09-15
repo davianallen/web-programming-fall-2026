@@ -63,3 +63,31 @@ a:link {color:#5465FF}
 a:visited {color:#6930C3}
 a:hover {color: #48BFE3}
 a:active {color:#72EFDD}
+
+/* Navigation layout using Flexbox */
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #D7E3FC;
+    padding: 15px
+}
+
+/* Removes underline from naviation links */
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Flexbot layout for About Me section */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+}
+
+/*Controls the text of About Me section */
+.about-text{
+    flex: 1;
+}
