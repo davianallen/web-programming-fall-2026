@@ -14,16 +14,42 @@ Dark Text:  #18202A
 White:      #FFFFFF
 */
 
+/* Light Theme CSS Variables */
+:root {
+    --background-color: #EDF2FB;
+    --secondary-background: #D7E3FC;
+    --text-color: #18202A;
+
+    --primary-purple: #6930C3;
+    --primary-blue: #5465FF;
+    --secondary-blue: #5390D9;
+    --accent-cyan: #48BFE3;
+    --highlight-mint: #72EFDD;
+}
+
+/* Dark Theme CSS Variables */
+:root.dark-theme{
+    --background-color: #121827;
+    --secondary-background: #202B40;
+    --text-color: #f1f4ff;
+
+    --primary-purple: #b9a6ff;
+    --primary-blue: #93AAFF;
+    --secondary-blue: #8CC9FF;
+    --accent-cyan: #75D7F0;
+    --highlight-mint: #72EFDD;
+}
+
 /* Styles entire webpage */
 body{
-    background-color: #EDF2FB;
-    color: #18202A;
+    background-color: var(--background-color);
+    color: var(--text-color);
     font-family: Arial, sans-serif;
 }
 
 /* Main title */
 h1{
-    color: #6930C3;
+    color: var(--primary-purple);
     font-family: Arial, sans-serif;
     font-size: 50px;
     margin: 20px;
@@ -31,21 +57,21 @@ h1{
 
 /* Section heading */
 h2{
-    color: #5465FF;
+    color: var(--primary-blue);
     font-family: Arial, sans-serif;
     margin: 20px;
 }
 
 /* Social Media heading */
 h3 {
-    color: #5390D9;
+    color: var(--secondary-blue);
     font-family: Arial, sans-serif;
     margin: 20px;
 }
 
 /* Paragraph Styling */
 p{
-    color: #18202A;
+    color: var(--text-color);
     font-family: Verdana, sans-serif;
     font-size: 16px;
     margin: 20px;
@@ -54,32 +80,32 @@ p{
 /* Image Styling */
 img{
     margin: 20px;
-    border: 5px solid #D7E3FC;
+    border: 5px solid var(--secondary-background);
     border-radius: 5px;
 }
 
 /* Link Styling */
-a:link {color:#5465FF}
-a:visited {color:#6930C3}
-a:hover {color: #48BFE3}
-a:active {color:#72EFDD}
+a:link {color: var(--primary-blue);}
+a:visited {color: var(--primary-purple);}
+a:hover {color: var(--accent-cyan);}
+a:active {color: var(--highlight-mint);}
 
 /* Navigation layout using Flexbox */
 nav{
     display: flex;
     justify-content: center;
     gap: 30px;
-    background-color: #D7E3FC;
-    padding: 15px
+    background-color: var(--secondary-background);
+    padding: 15px;
 }
 
-/* Removes underline from naviation links */
+/* Removes underline from navigation links */
 nav a{
     text-decoration: none;
     font-weight: bold;
 }
 
-/* Flexbot layout for About Me section */
+/* Flexbox layout for About Me section */
 .about-container {
     display: flex;
     align-items: center;
@@ -87,7 +113,8 @@ nav a{
     margin: 20px;
 }
 
-/*Controls the text of About Me section */
+/* Controls the text of About Me section */
 .about-text{
     flex: 1;
 }
+
